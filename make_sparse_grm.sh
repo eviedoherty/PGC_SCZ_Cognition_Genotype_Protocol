@@ -6,6 +6,8 @@
 #SBATCH --output=grm_sparse.out
 #SBATCH --error=grm_sparse.err
 
+#adjust file paths accordingly
+
 cd /home/edoherty/Ireland
 
 GCTA_BIN=/home/edoherty/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64
@@ -13,6 +15,6 @@ GCTA_BIN=/home/edoherty/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 
-$GCTA_BIN --grm grm_fastgwa_datasetname \
+$GCTA_BIN --grm grm_fastgwa_datasetname \ #adjust to match your dataset name
   --make-bK-sparse 0.05 \
   --out grm_fastgwa_sparse
