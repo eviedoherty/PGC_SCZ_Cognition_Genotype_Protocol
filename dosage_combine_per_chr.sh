@@ -9,7 +9,7 @@
 module load 2023
 module load PLINK/2.00a3.7-GCC-12.3.0
 
-DATASET="xirwt" #adjust to macth your dataset name 
+DATASET="xirwt" #adjust to match your dataset name 
 
 BGEN_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"
 PGEN_DIR="/home/edoherty/Ireland/pgen_chunks/${DATASET}"
