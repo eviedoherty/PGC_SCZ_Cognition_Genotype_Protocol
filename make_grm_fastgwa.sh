@@ -2,7 +2,7 @@
 #SBATCH --array=1-20
 #SBATCH --time=01:00:00
 #SBATCH --cpus-per-task=2
-#SBATCH --partition=genoa        # or thin/rome, whatever your allocation uses
+#SBATCH --partition=genoa      
 #SBATCH --job-name=grm_part
 #SBATCH --output=grm_part_%a.out
 #SBATCH --error=grm_part_%a.err
