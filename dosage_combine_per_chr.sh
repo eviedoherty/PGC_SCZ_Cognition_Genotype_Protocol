@@ -13,7 +13,7 @@ DATASET="xirwt" #adjust to match your dataset name
 
 BGEN_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"
 PGEN_DIR="/home/edoherty/Ireland/pgen_chunks/${DATASET}"
-FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes/${DATASET}"  #adjust the file paths accordingly
+FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes/${DATASET}"  #adjust file paths accordingly
 
 mkdir -p "$PGEN_DIR"
 mkdir -p "$FINAL_DIR"
