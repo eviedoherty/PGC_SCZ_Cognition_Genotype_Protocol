@@ -16,3 +16,5 @@ i=$SLURM_ARRAY_TASK_ID
   --make-grm-part $N $i \
   --thread-num 1 \
   --out grm_fastgwa_datasetname
+
+#EXAMPLE RUN COMMAND: sbatch make_grm_part.sh 21 
