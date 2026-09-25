@@ -10,6 +10,8 @@
 
 CHR=$1  
 
+#adjust files paths and names to match your datasets
+
 /home/edoherty/qctool/build/release/apps/qctool_v2.2.0 \
     -g /home/edoherty/Ireland/bgen_chromosomes/du2aa/chr${CHR}.bgen \
     -s /home/edoherty/Ireland/bgen_chromosomes/du2aa/chr${CHR}.sample \
@@ -19,3 +21,5 @@ CHR=$1
     -s /home/edoherty/Ireland/bgen_chromosomes/xirwt/chr${CHR}.sample \
     -og /home/edoherty/Ireland/bgen_chromosomes/chr${CHR}_merged.bgen \
     -os /home/edoherty/Ireland/bgen_chromosomes/chr${CHR}_merged.sample
+
+    #EXAMPLE RUNNING COMMAND FOR ALL CHRS: for chr in $(seq 1 22); do sbatch merge_chr.sh $chr; done
