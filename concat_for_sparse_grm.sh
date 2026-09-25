@@ -7,10 +7,10 @@
 
 cd /home/edoherty/gcta-1.95.3-linux-x86_64
 
-N=20
-PREFIX=grm_fastgwa_test
+N=20   #change the number of partitiions accordingly 
+PREFIX=grm_fastgwa_datasetname
 
-# safety check before touching anything
+# safety check before touching anything - will ensure that all generated partitions are present before concatenation
 for i in $(seq -w 1 $N); do
   for ext in grm.id grm.bin grm.N.bin; do
     if [ ! -f "${PREFIX}.part_${N}_${i}.${ext}" ]; then
