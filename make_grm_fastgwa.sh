@@ -12,6 +12,8 @@ CHR=$1
 N=20
 i=$SLURM_ARRAY_TASK_ID
 
+#adjust file paths accordingly
+
 /home/edoherty/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64 --bfile /home/edoherty/Ireland/chr${CHR}_pruned_for_fastGWA \
   --make-grm-part $N $i \
   --thread-num 1 \
