@@ -8,15 +8,14 @@
 #SBATCH --error=grm_part_%a.err
 
 
-CHR=$1
 N=20
 i=$SLURM_ARRAY_TASK_ID
 
 #adjust file paths accordingly
 
-/home/edoherty/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64 --bfile /home/edoherty/Ireland/chr${CHR}_pruned_for_fastGWA \
+/home/edoherty/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64 --bfile /home/edoherty/Ireland/combined_pruned_for_fastGWA \
   --make-grm-part $N $i \
   --thread-num 1 \
   --out grm_fastgwa_datasetname
 
-#EXAMPLE RUN COMMAND: sbatch make_grm_part.sh 21 
+#EXAMPLE RUN COMMAND: sbatch make_grm_part.sh  
