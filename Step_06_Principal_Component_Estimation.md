@@ -11,7 +11,7 @@ __Note__: All above parameters are automatically applied in RICOPILI pcaer. Plea
 
 Principal Component Estimation can be carried out using the pcaer function in RICOPILI. 
 
-Before running pcaer, create symlink the directories containing the hard call files:  
+Before running pcaer, create symlink the directories containing the hard call files.   
 
 ## Creating Symlinks
 
@@ -21,3 +21,30 @@ __Step 1 - Create a new directory__
 mkdir pca_test 
 cd ./pca_test
 ```
+
+
+__Step 2 - Create the symlinks to the .bed, .bim, and .fam within that directory (required for pcaer)__
+
+```bash
+ln -s /home/your_name/SCZ_Wave3/dataset/imputed/hardcall_genotypes_hg38_1kg/scz_dataset_eur_sr-qc.hg38.ch.fl.bgn.bim
+
+ln -s /home/your_name/SCZ_Wave3/dataset/imputed/hardcall_genotypes_hg38_1kg/scz_dataset_eur_sr-qc.hg38.ch.fl.bgn.bed
+
+ln -s /home/your_name/SCZ_Wave3/dataset/imputed/hardcall_genotypes_hg38_1kg/scz_dataset_eur_sr-qc.hg38.ch.fl.bgn.fam
+```
+
+## Run pcaer
+
+```bash
+/path/to/RICOPILI/rp_bin/pcaer \
+  --prefercase \
+  --preferfam \
+  --out pca_for_dataset \
+  scz_dataset_eur_sr-qc.hg38.ch.fl.bgn.bim
+```
+
+### Output 
+
+The output file name should look like this; mds_pca_for_dataset.menv. This .menv folder will contain the PCs for your datasets (mds_pca_for_dataset.menv/pca_for_dataset.menv.emds) which should then be used in the association analysis as covariates.  
+
+Relatedness testing was not performed as the chosen association testing method (fastGWA) accounts for population stratification and relatedness using a genetic relationship matrix (see __Association Analysis__).  
