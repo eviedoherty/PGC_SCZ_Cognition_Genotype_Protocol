@@ -73,7 +73,7 @@ Error: duplicated FID+IID in the covariate file.
 This may occur if individuals have phenotype data and no genotype data.  
 
 
-##Running fastGWA association analysis
+## Running fastGWA association analysis
 
 ```bash
 /path/to/gcta-1.95.3-linux-x86_64/squashfs-root/usr/bin/gcta64 \ 
