@@ -9,11 +9,11 @@
 module load 2023
 module load PLINK/2.00a3.7-GCC-12.3.0
 
-DATASET="xdubl"
+DATASET="xdubl"  #ajust dataset name accordingly
 
-BGEN_DIR="/home/edoherty/Ireland/bgen_chunks_chrX/${DATASET}"
+BGEN_DIR="/home/edoherty/Ireland/bgen_chunks_chrX/${DATASET}"  #adjust file paths accordingly 
 PGEN_DIR="/home/edoherty/Ireland/pgen_chunks_chrX/${DATASET}"
-FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes_chrX/${DATASET}"
+FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes_chrX/${DATASET}" 
 
 mkdir -p "$PGEN_DIR" "$FINAL_DIR"
 
