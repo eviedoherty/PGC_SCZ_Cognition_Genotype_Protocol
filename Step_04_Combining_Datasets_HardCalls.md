@@ -45,7 +45,7 @@ __Note__: In the above example, the code matches phenotype IDs to genotype IDs u
 
 Filter the hard-call genotype files (binary files) to retain only individuals with available phenotypic data (i.e. a g-factor value). This ensures that PCs are generated in the same population included in the downstream association analysis. 
 
-### Repeat the below code for each dataset you wish to merge i.e. if you have three datasets you wish to merge, then repeat the below code for all three datasets: 
+Repeat the below code for each dataset you wish to merge i.e. if you have three datasets you wish to merge, then repeat the below code for all three datasets: 
 
 
 ```bash
