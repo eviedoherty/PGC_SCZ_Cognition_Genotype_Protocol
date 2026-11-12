@@ -1,4 +1,4 @@
-__Data Preparation__ 
+# __Data Preparation__ 
 
 Datasets from the same data site which have a similar composition i.e. several of the same cognitive measures, with less than 100 samples should be collapsed and analysed together as a single unit (as per Nievergelt et al., 2024).  
 
