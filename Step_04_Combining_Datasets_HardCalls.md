@@ -42,7 +42,9 @@ awk 'NR==FNR {ids[$1]; next} {split($1,a,"*"); if (a[2] in ids) print $1, $2}' \
 __Note__: In the above example, the code matches phenotype IDs to genotype IDs using the portion of the genotype ID that follows __"*"__. This symbol/character may vary across datasets and therefore should be adjusted accordingly depending on the format of your genotype IDs (__i.e. “_” rather than “*”__).  
 
 
-__Step 2__: Filter the hard-call genotype files (binary files) to retain only individuals with available phenotypic data (i.e. a g-factor value). This ensures that PCs are generated in the same population included in the downstream association analysis. 
+## __Step 2__
+
+Filter the hard-call genotype files (binary files) to retain only individuals with available phenotypic data (i.e. a g-factor value). This ensures that PCs are generated in the same population included in the downstream association analysis. 
 
 Repeat the below code for each dataset you wish to merge i.e. if you have three datasets you wish to merge, then repeat the below code for all three datasets: 
 
@@ -55,7 +57,9 @@ plink2 \
   --out hardcall_file_matched_IDs_dataset
 ```
 
-__Step 3__: Merge the datasets.  
+## __Step 3__
+
+Merge the datasets.  
 
 First, generate a merge list: 
 
