@@ -14,7 +14,7 @@ For the Principal Component Analysis/Principal Component Estimation, the imputed
 
 ## __Dosage Marker Calls__ 
 
-Association testing should be performed using imputed dosage marker calls for all 22 autosomal chromosomes and the X chromosome. Dosage genotypes imputed via RICOPILI are output in PLINK2-dosage format, which is not compatible with GCTA fastGWA (Jiang et al., 2019). Files should therefore be converted to .bgen format using PLINK2 (see __dosage_to_bgen_universal.sh__) and then combined per chromosome (__dosage_combine_per_chr.sh__). 
+Association testing should be performed using imputed dosage marker calls for all 22 autosomal chromosomes and the X chromosome. Dosage genotypes imputed via RICOPILI are output in PLINK2-dosage format, which is not compatible with GCTA fastGWA (Jiang et al., 2019). Files should therefore be converted to .bgen format using PLINK2 (see __01_convert_dosage_to_bgen.sh__) and then combined per chromosome (__02_dosage_combine_per_chr.sh__). 
 
  
 
