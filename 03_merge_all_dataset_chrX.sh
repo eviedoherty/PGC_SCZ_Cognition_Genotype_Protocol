@@ -11,9 +11,9 @@
 CHR=$1  
 
 /home/edoherty/qctool/build/release/apps/qctool_v2.2.0 \
-    -g /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_females.bgen \
-    -s /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_females_fixed.sample \
     -g /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_males.bgen \
     -s /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_males_fixed.sample \
-    -og /home/edoherty/Ireland/chr${CHR}_merged_all_nonpar.bgen \
+    -g /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_males.bgen \
+    -s /home/edoherty/Ireland/bgen_chromosomes_chr${CHR}/chr${CHR}_merged_males_fixed.sample \
+    -og /home/edoherty/Ireland/chr${CHR}_merged_all_males.bgen \
     -os /home/edoherty/Ireland/chr${CHR}_merged_all_nonpar.sample
