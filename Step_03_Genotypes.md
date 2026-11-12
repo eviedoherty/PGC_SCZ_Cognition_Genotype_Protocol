@@ -8,7 +8,7 @@ Note: The dosage marker file extensions listed above are consistent with those u
 
 ## __Hard Calls__ 
 
-For the Principal Component Analysis (PCA), the imputed binary genotype files i.e. hard calls, for the autosomal variants should be used to QC for high quality, high frequency variants (See __Principal Component Estimation__).  
+For the Principal Component Analysis/Principal Component Estimation, the imputed binary genotype files i.e. hard calls, for the autosomal variants should be used to QC for high quality, high frequency variants (See __Principal Component Estimation__).  
 
  
 
