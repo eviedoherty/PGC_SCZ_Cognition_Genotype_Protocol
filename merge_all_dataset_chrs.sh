@@ -10,7 +10,7 @@
 
 CHR=$1  
 
-#adjust files paths and names to match your datasets
+#adjust to specify your desired paths/file names 
 
 /home/edoherty/qctool/build/release/apps/qctool_v2.2.0 \
     -g /home/edoherty/Ireland/bgen_chromosomes/du2aa/chr${CHR}.bgen \
