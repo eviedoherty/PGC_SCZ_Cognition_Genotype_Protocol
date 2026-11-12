@@ -11,9 +11,9 @@ module load PLINK/2.00a3.7-GCC-12.3.0
 
 DATASET="xirwt" #adjust to match your dataset name 
 
-BGEN_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"
-PGEN_DIR="/home/edoherty/Ireland/pgen_chunks/${DATASET}"
-FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes/${DATASET}"  #adjust file paths accordingly
+BGEN_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"  #adjust this path to specify your desired directory
+PGEN_DIR="/home/edoherty/Ireland/pgen_chunks/${DATASET}"  #adjust this path to specify your desired directory
+FINAL_DIR="/home/edoherty/Ireland/bgen_chromosomes/${DATASET}"   #adjust this path to specify your desired directory
 
 mkdir -p "$PGEN_DIR"
 mkdir -p "$FINAL_DIR"
