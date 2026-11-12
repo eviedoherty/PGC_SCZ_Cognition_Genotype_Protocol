@@ -10,11 +10,11 @@ module load 2023
 module load PLINK/2.00a3.7-GCC-12.3.0
 
 
-DATASET="xirwt" #adjust to match your dataset name 
+DATASET="xirwt"   #adjust to match your dataset name 
 
-DOSAGE_DIR="/home/edoherty/SCZ_Wave3/${DATASET}/imputed/dosage_genotypes_hg38_1kg" 
+DOSAGE_DIR="/home/edoherty/SCZ_Wave3/${DATASET}/imputed/dosage_genotypes_hg38_1kg"  #adjust file path to your dosage file directory
 
-OUT_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"   #adjust file paths accordingly
+OUT_DIR="/home/edoherty/Ireland/bgen_chunks/${DATASET}"   #adjust file path to your chosen output directory
 
 mkdir -p "$OUT_DIR"
 
