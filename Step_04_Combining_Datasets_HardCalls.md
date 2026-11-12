@@ -24,7 +24,7 @@ awk 'NR==FNR {ids[$1]; next} $2 in ids {print $1, $2}' \
 ```
 
 
-### __Scenario 2 - Phenotype IDs partly match genotype IDs in the IID/FID column__ 
+### __Scenario 2 - Phenotype IDs partly match genotype IDs in the IID/FID column__ 
 
 In some cases, phenotype IDs only partly match genotype IDs For example, phenotype ID: __Dub_PT-2BBQ__, FID in .fam file: __cas_scz_xdubl_eur_sr_A6.0*Dub_PT-2BBQ__.  
 
@@ -45,7 +45,7 @@ __Note__: In the above example, the code matches phenotype IDs to genotype IDs u
 
 Filter the hard-call genotype files (binary files) to retain only individuals with available phenotypic data (i.e. a g-factor value). This ensures that PCs are generated in the same population included in the downstream association analysis. 
 
-Repeat the below code for each dataset you wish to merge i.e. if you have three datasets you wish to merge, then repeat the below code for all three datasets: 
+### Repeat the below code for each dataset you wish to merge i.e. if you have three datasets you wish to merge, then repeat the below code for all three datasets: 
 
 
 ```bash
