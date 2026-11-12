@@ -18,3 +18,20 @@ awk 'NR==FNR {ids[$1]; next} $2 in ids {print $1, $2}' \
 ./SCZ_Wave3/maindataset/imputed/hardcall_genotypes_hg38_1kg/scz_maindataset_eur_sr-qc.hg38.ch.fl.bgn.fam \
 > genotype_phenotype_matched_IDs.txt
 ```
+
+
+__Scenario 2 - Phenotype IDs partly match genotype IDs in the IID/FID column__ 
+
+In some cases, phenotype IDs only partly match genotype IDs For example, phenotype ID: __Dub_PT-2BBQ__, FID in .fam file: __cas_scz_xdubl_eur_sr_A6.0*Dub_PT-2BBQ__.  
+
+The below code matches these phenotype IDs to genotype IDs in the FID column (to match with IID column adjust “__{split($1,a,"*")__” to “__{split($2,a,"*")__”): 
+
+
+```bash
+awk 'NR==FNR {ids[$1]; next} {split($1,a,"*"); if (a[2] in ids) print $1, $2}' \
+./Folder/maindataset_IDs_matching_with_phenotypedataset.txt \
+./SCZ_Wave3/maindataset/imputed/hardcall_genotypes_hg38_1kg/scz_dataset_eur_sr-qc.hg38.ch.fl.bgn.fam \
+> genotype_phenotype_matched_IDs.txt
+```
+
+__Note__: In the above example, the code matches phenotype IDs to genotype IDs using the portion of the genotype ID that follows __"*"__. This symbol/character may vary across datasets and therefore should be adjusted accordingly depending on the format of your genotype IDs (__i.e. “_” rather than “*”__).  
