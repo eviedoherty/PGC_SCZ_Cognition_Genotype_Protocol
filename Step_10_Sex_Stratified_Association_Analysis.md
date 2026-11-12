@@ -1,4 +1,4 @@
-#Sex-stratified Association Analyses 
+# Sex-stratified Association Analyses 
 
 The sex-specific association analyses should be performed on males and females independently using the same approach outlined for the main association analyses (see __Main Association Analysis__).   
 
