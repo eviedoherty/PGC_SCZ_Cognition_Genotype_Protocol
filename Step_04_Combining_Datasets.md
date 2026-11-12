@@ -3,6 +3,8 @@ Please note, this step is only applicable if you have collapsed datasets (See __
 __Hard Calls__ 
 
 
+
+
 __Step 1__: Match phenotype IDs to genotype IDs using the available .fam files and generate a .txt file containing the matching IDs. Please note that this is a general guide, and individual approaches to ID matching is permitted.   
  
 
