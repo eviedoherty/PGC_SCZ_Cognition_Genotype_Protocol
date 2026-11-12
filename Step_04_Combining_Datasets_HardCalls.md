@@ -4,11 +4,12 @@ Please note, this step is only applicable if you have collapsed datasets (See __
 
 
 
-__Step 1__: Match phenotype IDs to genotype IDs using the available .fam files and generate a .txt file containing the matching IDs. Please note that this is a general guide, and individual approaches to ID matching is permitted.   
+##__Step 1__
+Match phenotype IDs to genotype IDs using the available .fam files and generate a .txt file containing the matching IDs. Please note that this is a general guide, and individual approaches to ID matching is permitted.   
  
 
 
-###__Scenario 1 - Phenotype IDs fully match genotype IDs in the IID/FID column__ 
+__Scenario 1 - Phenotype IDs fully match genotype IDs in the IID/FID column__ 
 
 The below code matches the phenotype IDs to the genotype IID column (column 2 .fam file; $2).  
 
@@ -23,7 +24,7 @@ awk 'NR==FNR {ids[$1]; next} $2 in ids {print $1, $2}' \
 
 
 
-###__Scenario 2 - Phenotype IDs partly match genotype IDs in the IID/FID column__ 
+__Scenario 2 - Phenotype IDs partly match genotype IDs in the IID/FID column__ 
 
 In some cases, phenotype IDs only partly match genotype IDs For example, phenotype ID: __Dub_PT-2BBQ__, FID in .fam file: __cas_scz_xdubl_eur_sr_A6.0*Dub_PT-2BBQ__.  
 
