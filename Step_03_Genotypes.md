@@ -1,4 +1,4 @@
-__Genotypes__ 
+# __Genotypes__ 
 
 Both binary hard call genotype files (.bed, .bim, .fam) and dosage marker call (.fam, .gz, .info, .map, .ngt) files are required for this analysis.  
 
@@ -6,15 +6,15 @@ Note: The dosage marker file extensions listed above are consistent with those u
 
  
 
-__Hard Calls__ 
+## __Hard Calls__ 
 
-For the Principal Component Analysis (PCA), the imputed binary genotype files i.e. hard calls, for the autosomal variants should be used to QC for high quality, high frequency variants (See Principal Component Estimation).  
+For the Principal Component Analysis (PCA), the imputed binary genotype files i.e. hard calls, for the autosomal variants should be used to QC for high quality, high frequency variants (See __Principal Component Estimation__).  
 
  
 
-__Dosage Marker Calls__ 
+## __Dosage Marker Calls__ 
 
-Association testing should be performed using imputed dosage marker calls for all 22 autosomal chromosomes and the X chromosome. Dosage genotypes imputed via RICOPILI are output in PLINK2-dosage format, which is not compatible with GCTA fastGWA (Jiang et al., 2019). Files should therefore be converted to .bgen format using PLINK2 (see dosage_to_bgen_universal.sh) and then combined per chromosome (dosage_combine_per_chr.sh). 
+Association testing should be performed using imputed dosage marker calls for all 22 autosomal chromosomes and the X chromosome. Dosage genotypes imputed via RICOPILI are output in PLINK2-dosage format, which is not compatible with GCTA fastGWA (Jiang et al., 2019). Files should therefore be converted to .bgen format using PLINK2 (see __dosage_to_bgen_universal.sh__) and then combined per chromosome (__dosage_combine_per_chr.sh__). 
 
  
 
