@@ -94,7 +94,7 @@ __Run merge__
 
 __Step 5 - Generate GRM partitions__ 
 
-The GRM can be generated in several partitions using the __make_grm_partitions_fastgwa.sh__ script.  
+The GRM can be generated in several partitions using the __01_make_grm_partitions_fastgwa.sh__ script.  
 
 
 To verify that the partitions have been generated successfully, run the following code to check that the output files contain data. An output of 0 indicates that the partitions have not been generated successfully: 
@@ -108,12 +108,12 @@ __Note__: By default, the script generates the GRM in 20 partitions. The number 
 
 __Step 6 - Concatenate GRM partitions__
 
-Once all the partitions have been created, they should be concatenated into a single file using the __concat_for_sparse_grm.sh script__ 
+Once all the partitions have been created, they should be concatenated into a single file using the __02_concat_partitions_for_sparse_grm.sh__ script 
 
  
 __Step 7 - Generate a Sparse GRM__  
 
-The sparse GRM can subsequently be generated using the __make_sparse_grm.sh script__.  
+The sparse GRM can subsequently be generated using the __03_make_sparse_grm.sh__ script.  
 
 
 Please ensure to adjust all scripts accordingly to match your data file names/paths. 
