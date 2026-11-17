@@ -64,7 +64,7 @@ Each genetic analysis should be covaried for age, sex and a subset of the princi
 
 FastGWA requires continuous (--qcovar) and categorical (--covar) variables to be divided into separate files. Please ensure that covariate data is accompanied by identical FIDs and IIDs that match the .sample file belonging to the genotype files. 
 
-Covariates Files 
+## Covariates Files 
 
 __Note__: When generating covariates files, please ensures there are no NAs in the FID/IID columns as this will flag the following error:  
 
